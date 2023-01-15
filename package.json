@@ -1,9 +1,8 @@
 {
   "name": "nextgturbolaser",
-  "homepage": "https://demos.creative-tim.com/notus-nextjs",
+  "homepage": "http://nextgturbolaser.com",
   "version": "1.0.0",
-  "description": "Notus NextJS - A free Tailwind CSS, NextJS and React Ui Kit and Admin by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/notus-nextjs",
+  "description": "Next-G Turbo Laser | Laser Cutting And Engrave Machine. Acrylic, Metal, Non-Metal",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.2.1",
