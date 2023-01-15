@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.imageGallery .image-gallery-thumbnail.active,
+.imageGallery .image-gallery-thumbnail:hover,
+.imageGallery .image-gallery-thumbnail:focus {
+  border-color: lightgrey;
+}
+
+.imageGallery .fullscreen .image-gallery-thumbnail.active,
+.imageGallery .fullscreen .image-gallery-thumbnail:hover,
+.imageGallery .fullscreen .image-gallery-thumbnail:focus {
+  border-color: grey;
+}
+
+.imageGallery .image-gallery-icon:hover {
+  color: lightgrey;
+}
+
+.imageGallery .original {
+  width: 100%;
+}
+.imageGallery .original:focus,
+.imageGallery .original:active {
+  outline: none;
+}
+
+.imageGallery.mobile .original:not(.slider) {
+  width: 75%;
+  padding-right: 0.3em;
+}
+
+.imageGallery.mobile .fullscreen .original {
+  width: 100%;
+  padding-right: 0;
+}

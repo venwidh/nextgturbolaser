@@ -2,7 +2,11 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  content: ["./**/*.html", "./*.html", "./**/*.js", "./*.js"],
+  content: [
+    "./pages/**/*.{html,js,ts,jsx,tsx}",
+    "./components/**/*.{html,js,ts,jsx,tsx}",
+    "./layouts/**/*.{html,js,ts,jsx,tsx}",
+  ],
   theme: {
     colors: {
       ...colors,
@@ -16,6 +20,7 @@ module.exports = {
       },
       opacity: {
         80: ".8",
+        90: ".9",
       },
       zIndex: {
         2: 2,

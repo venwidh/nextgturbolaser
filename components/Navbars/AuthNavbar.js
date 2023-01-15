@@ -3,6 +3,7 @@ import React from "react";
 // components
 
 import PagesDropdown from "components/Dropdowns/PagesDropdown.js";
+import Image from "next/image";
 
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -15,7 +16,11 @@ export default function Navbar(props) {
               href="/"
               className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
-              Notus NextJS
+              <Image
+                src="/img/TurboLaserLogo-600px.png"
+                width="200"
+                height="150"
+              />
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

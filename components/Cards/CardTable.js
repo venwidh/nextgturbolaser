@@ -97,10 +97,10 @@ export default function CardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src="/demo/img/bootstrap.jpg"
+                    src="/img/bootstrap.jpg"
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></demo/img>{" "}
+                  ></img>{" "}
                   <span
                     className={
                       "ml-3 font-bold " +
@@ -119,25 +119,25 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src="/demo/img/team-1-800x800.jpg"
+                      src="/img/team-1-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-2-800x800.jpg"
+                      src="/img/team-2-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-3-800x800.jpg"
+                      src="/img/team-3-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-4-470x470.png"
+                      src="/img/team-4-470x470.png"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -160,10 +160,10 @@ export default function CardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src="/demo/img/angular.jpg"
+                    src="/img/angular.jpg"
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></demo/img>{" "}
+                  ></img>{" "}
                   <span
                     className={
                       "ml-3 font-bold " +
@@ -183,25 +183,25 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src="/demo/img/team-1-800x800.jpg"
+                      src="/img/team-1-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-2-800x800.jpg"
+                      src="/img/team-2-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-3-800x800.jpg"
+                      src="/img/team-3-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-4-470x470.png"
+                      src="/img/team-4-470x470.png"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -224,10 +224,10 @@ export default function CardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src="/demo/img/sketch.jpg"
+                    src="/img/sketch.jpg"
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></demo/img>{" "}
+                  ></img>{" "}
                   <span
                     className={
                       "ml-3 font-bold " +
@@ -246,25 +246,25 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src="/demo/img/team-1-800x800.jpg"
+                      src="/img/team-1-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-2-800x800.jpg"
+                      src="/img/team-2-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-3-800x800.jpg"
+                      src="/img/team-3-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-4-470x470.png"
+                      src="/img/team-4-470x470.png"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -287,10 +287,10 @@ export default function CardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src="/demo/img/react.jpg"
+                    src="/img/react.jpg"
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></demo/img>{" "}
+                  ></img>{" "}
                   <span
                     className={
                       "ml-3 font-bold " +
@@ -310,25 +310,25 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src="/demo/img/team-1-800x800.jpg"
+                      src="/img/team-1-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-2-800x800.jpg"
+                      src="/img/team-2-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-3-800x800.jpg"
+                      src="/img/team-3-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-4-470x470.png"
+                      src="/img/team-4-470x470.png"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
@@ -351,10 +351,10 @@ export default function CardTable({ color }) {
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left flex items-center">
                   <img
-                    src="/demo/img/vue.jpg"
+                    src="/img/vue.jpg"
                     className="h-12 w-12 bg-white rounded-full border"
                     alt="..."
-                  ></demo/img>{" "}
+                  ></img>{" "}
                   <span
                     className={
                       "ml-3 font-bold " +
@@ -374,25 +374,25 @@ export default function CardTable({ color }) {
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                   <div className="flex">
                     <img
-                      src="/demo/img/team-1-800x800.jpg"
+                      src="/img/team-1-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-2-800x800.jpg"
+                      src="/img/team-2-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-3-800x800.jpg"
+                      src="/img/team-3-800x800.jpg"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                     <img
-                      src="/demo/img/team-4-470x470.png"
+                      src="/img/team-4-470x470.png"
                       alt="..."
                       className="w-10 h-10 rounded-full border-2 border-blueGray-50 shadow -ml-4"
-                    ></demo/img>
+                    ></img>
                   </div>
                 </td>
                 <td className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
