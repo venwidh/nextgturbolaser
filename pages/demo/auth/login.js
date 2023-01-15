@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 // layout for page
@@ -103,10 +102,8 @@ export default function Login() {
                 </a>
               </div>
               <div className="w-1/2 text-right">
-                <Link href="/auth/register">
-                  <a href="#pablo" className="text-blueGray-200">
-                    <small>Create new account</small>
-                  </a>
+                <Link href="/auth/register" className="text-blueGray-200">
+                  <small>Create new account</small>
                 </Link>
               </div>
             </div>
