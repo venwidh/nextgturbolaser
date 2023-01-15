@@ -27,9 +27,7 @@ export const ProductTile = ({
               className="text-primary fill-current"
             ></polygon>
           </svg>
-          <h4 className="text-2xl font-bold text-fill-white text-stroke text-stroke-secondary">
-            {name}
-          </h4>
+          <h4 className="text-2xl font-bold text-white">{name}</h4>
         </blockquote>
       </div>
     </a>
