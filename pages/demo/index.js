@@ -50,7 +50,7 @@ export default function Index() {
         </div>
         <img
           className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-          src="/img/pattern_nextjs.png"
+          src="/demo/img/pattern_nextjs.png"
           alt="..."
         />
       </section>
@@ -228,32 +228,32 @@ export default function Index() {
               <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
                 <img
                   alt="..."
-                  src="/img/component-btn.png"
+                  src="/demo/img/component-btn.png"
                   className="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
                 />
                 <img
                   alt="..."
-                  src="/img/component-profile-card.png"
+                  src="/demo/img/component-profile-card.png"
                   className="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
                 />
                 <img
                   alt="..."
-                  src="/img/component-info-card.png"
+                  src="/demo/img/component-info-card.png"
                   className="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
                 />
                 <img
                   alt="..."
-                  src="/img/component-info-2.png"
+                  src="/demo/img/component-info-2.png"
                   className="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
                 />
                 <img
                   alt="..."
-                  src="/img/component-menu.png"
+                  src="/demo/img/component-menu.png"
                   className="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
                 />
                 <img
                   alt="..."
-                  src="/img/component-btn-pink.png"
+                  src="/demo/img/component-btn-pink.png"
                   className="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
                 />
               </div>
@@ -485,7 +485,7 @@ export default function Index() {
                   transform:
                     "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
                 }}
-                src="/img/documentation.png"
+                src="/demo/img/documentation.png"
               />
             </div>
           </div>
@@ -517,7 +517,7 @@ export default function Index() {
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/login.jpg"
+                        src="/demo/img/login.jpg"
                       />
                     </div>
                   </Link>
@@ -532,7 +532,7 @@ export default function Index() {
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/profile.jpg"
+                        src="/demo/img/profile.jpg"
                       />
                     </div>
                   </Link>
@@ -547,7 +547,7 @@ export default function Index() {
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src="/img/landing.jpg"
+                        src="/demo/img/landing.jpg"
                       />
                     </div>
                   </Link>

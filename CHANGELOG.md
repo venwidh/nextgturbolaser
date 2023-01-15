@@ -19,7 +19,7 @@
   - For the colors, the only change that we made, is the fact that we've added all Tailwind CSS colors to our `tailwind.config.js` files, and inside our product, all `{type}-green-{number}` classes were renamed to `{type}-emerald-{number}`
 - `lg:bg-transparent` is not working anymore, so we've changed it with `lg:bg-opacity-0`
 - Since we've dropped the usage of custom CSS, and reverted to `Built-In CSS Support` from `NextJS`, we had to move our images inside the `public` folder, and our styles inside the `styles` folder
-  - All the `require` images have been replaced by simple `/img/` strings
+  - All the `require` images have been replaced by simple `/demo/img/` strings
 - https://github.com/creativetimofficial/notus-angular/issues/4
 - https://github.com/creativetimofficial/notus-js/issues/4
 - https://github.com/creativetimofficial/notus-js/pull/5
