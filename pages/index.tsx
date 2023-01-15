@@ -26,6 +26,34 @@ export const getStaticProps: GetStaticProps<{
   };
 };
 
+const TopProduct = () => (
+  <div className="flex flex-wrap">
+    <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+      <ProductTile
+        name="Turbo Cut CNC Router Machine TC-1212"
+        img="/img/product-tc-1212.jpg"
+        contentImg="/img/product-tc-1212-spec.jpg"
+      />
+    </div>
+
+    <div className="w-full md:w-4/12 px-4 text-center">
+      <ProductTile
+        name="Turbo Laser Acrylic TL-1310"
+        img="/img/product-tl-1310.jpg"
+        contentImg="/img/product-tl-1310-spec.jpg"
+      />
+    </div>
+
+    <div className="pt-6 w-full md:w-4/12 px-4 text-center">
+      <ProductTile
+        name="Turbo Cut CNC Router Machine TC-1325"
+        img="/img/product-tc-1325.jpg"
+        contentImg="/img/product-tc-1325-spec.jpg"
+      />
+    </div>
+  </div>
+);
+
 export default function Landing({
   banners,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -46,7 +74,7 @@ export default function Landing({
       <IndexNavbar />
       <main>
         <section id="home">
-          <div className="relative pt-16 pb-48 flex content-center items-center justify-center min-h-screen-75 bg-secondary">
+          <div className="relative pt-16 pb-24 sm:pb-32 lg:pb-48 flex content-center items-center justify-center min-h-screen-50 lg:min-h-screen-75 bg-secondary">
             <ImageGallery
               type="slider"
               images={banners.map((img) => ({ src: img }))}
@@ -75,75 +103,59 @@ export default function Landing({
 
         <section id="products" className="pb-20 -mt-28 bg-blueGray-200">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap">
-              <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-                <ProductTile
-                  img="/img/product-tc-1212.jpg"
-                  name="Turbo Cut CNC Router Machine TC-1212"
-                />
-              </div>
-
-              <div className="w-full md:w-4/12 px-4 text-center">
-                <ProductTile
-                  img="/img/product-tl-1310.jpg"
-                  name="Turbo Laser Acrylic TL-1310"
-                />
-              </div>
-
-              <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-                <ProductTile
-                  img="/img/product-tc-1325.jpg"
-                  name="Turbo Cut CNC Router Machine TC-1325"
-                />
-              </div>
+            <div className="hidden lg:block">
+              <TopProduct />
             </div>
 
-            <div className="flex flex-wrap items-center my-6">
+            <div className="flex flex-wrap items-center my-6 mt-28 lg:mt-6 pt-10 lg:pt-0">
               <div className="w-full md:w-9/12 px-4 mr-auto ml-auto text-center">
                 <h3 className="text-3xl mb-8 font-semibold leading-normal">
-                  Our Products
+                  {res.ourProducts}
                 </h3>
                 <p className="text-lg font-semibold leading-relaxed mt-0 mb-4 text-blueGray-600">
                   PT. TURBOMAS LANGGENG LESTARI
                   <br />
-                  <span className="font-normal">
-                    Distributor and Trading Company.
-                  </span>
+                  <span className="font-normal">{res.distAndTrading}</span>
                 </p>
                 <p className="text-lg leading-relaxed mt-0 mb-4 text-blueGray-600">
-                  Presents new technology and models for metal or non-metal
-                  laser machine, integrated with I30Watt powered lasertube which
-                  will be a perfect working partner for your workshop.
+                  {res.presentsNewTech}
                 </p>
               </div>
+            </div>
+
+            <div className="block lg:hidden">
+              <TopProduct />
             </div>
 
             <div className="flex flex-wrap mt-14">
               <div className="lg:pt-6 w-full md:w-4/12 px-4 text-center">
                 <ProductTile
-                  img="/img/product-tl-1490.jpg"
                   name="Turbo Laser Acrylic TL-1490"
+                  img="/img/product-tl-1490.jpg"
+                  contentImg="/img/product-tl-1490-spec.jpg"
                 />
               </div>
 
               <div className="w-full pt-16 md:w-4/12 px-4 text-center">
                 <ProductTile
-                  img="/img/product-tlm-1390.jpg"
                   name="Turbo Laser Metal Non Metal TL-1390M"
+                  img="/img/product-tlm-1390.jpg"
+                  contentImg="/img/product-tlm-1390-spec.jpg"
                 />
               </div>
 
               <div className="w-full md:w-4/12 px-4 text-center">
                 <ProductTile
-                  img="/img/product-tlm-2513.jpg"
                   name="Turbo Laser Metal Non Metal TL-2513M"
+                  img="/img/product-tlm-2513.jpg"
+                  contentImg="/img/product-tlm-2513-spec.jpg"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about-us" className="relative py-16 pb-32">
+        <section id="about-us" className="relative py-12 pb-32">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -166,15 +178,14 @@ export default function Landing({
           <div className="flex flex-wrap items-center mb-14">
             <div className="w-full md:w-9/12 px-4 mr-auto ml-auto text-center">
               <h3 className="text-3xl mb-8 font-semibold leading-normal">
-                About Us
+                {res.aboutUs}
               </h3>
               <p className="text-lg leading-relaxed mt-0 mb-4 text-blueGray-600">
                 PT. TURBOMAS LANGGENG LESTARI (Next-G Turbo Laser)
                 <br />
-                is a growing company specialize in Laser Cutting And Engrave
-                Machine.
+                {res.isAGrowingCompany}
                 <br />
-                We have been established since 2010.
+                {res.weHaveBeenEstablished}
               </p>
             </div>
           </div>
@@ -211,11 +222,11 @@ export default function Landing({
             </svg>
           </div>
 
-          <div className="container mx-auto px-4 lg:pt-16 lg:pb-28">
+          <div className="container mx-auto px-4 py-12 lg:pb-28">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-9/12 px-4">
                 <h2 className="text-4xl font-semibold text-white pb-8">
-                  Contact Us
+                  {res.contactUs}
                 </h2>
                 <p className="text-lg leading-relaxed mt-4 mb-6 text-white">
                   <i className="fa fa-phone mr-4" aria-hidden="true" />
@@ -257,7 +268,7 @@ export default function Landing({
                 </p>
                 <p className="text-lg leading-relaxed mt-4 mb-6 text-white">
                   <i className="fa fa-map-pin mr-4" aria-hidden="true" />
-                  Our Location
+                  {res.ourLocation}
                   <br />
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1836.384360920488!2d106.98711293624923!3d-6.156270603172166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698a3934666eef%3A0x9a469055f4532cfe!2sTurbo+Laser+(PT.+Turbo+Mas+Langgeng+Lestari!5e0!3m2!1sen!2sid!4v1488653902635"

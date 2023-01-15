@@ -5,8 +5,6 @@ import { RESOURCES } from "../../lib/resources";
 import { useLanguageStore } from "../../lib/stores/resources-store";
 // components
 
-import IndexDropdown from "../Dropdowns/IndexDropdown";
-
 export default function Navbar() {
   const { res } = useLanguageStore(({ res }) => ({ res }));
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -23,7 +21,7 @@ export default function Navbar() {
                 src="/img/TurboLaserLogo-600px.png"
                 alt="logo"
                 width="150"
-                height="150"
+                height="100"
               />
             </Link>
             <button
@@ -57,9 +55,9 @@ export default function Navbar() {
                   </a>
                 </li>
               ))}
-              <li className="flex items-center pl-5">
+              <li className="flex items-center ml-7">
                 {Object.keys(RESOURCES).map((lang, i) => (
-                  <>
+                  <div key={lang} className="flex">
                     <Link
                       key={lang}
                       href={`?lang=${lang}`}
@@ -67,8 +65,10 @@ export default function Navbar() {
                     >
                       {lang.toUpperCase()}
                     </Link>
-                    {i < lang.length - 1 && <div className="mx-2">|</div>}
-                  </>
+                    {i < lang.length - 1 && (
+                      <div className="mx-2 self-center">|</div>
+                    )}
+                  </div>
                 ))}
               </li>
             </ul>
