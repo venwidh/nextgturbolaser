@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { useRouter } from "next/router";
 import { FunctionComponent, useRef, useState } from "react";
 import ReactImageGallery from "react-image-gallery";
 
@@ -14,8 +13,6 @@ const ImageGallery: FunctionComponent<{
   }[];
   type?: "gallery" | "slider";
 }> = ({ images, type = "slider" }) => {
-  const router = useRouter();
-
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const reactImageGallery = useRef<ReactImageGallery>(null);
@@ -39,23 +36,6 @@ const ImageGallery: FunctionComponent<{
       showNav={!isMobile && type === "slider"}
       showPlayButton={false}
       showFullscreenButton={false}
-      onClick={() => {
-        if (type !== "slider") {
-          reactImageGallery.current?.fullScreen();
-        } else {
-          const clickedIndex = reactImageGallery.current?.getCurrentIndex();
-          if (clickedIndex === undefined) {
-            return;
-          }
-
-          const redirectUrl = images[clickedIndex].redirectUrl;
-          if (!redirectUrl) {
-            return;
-          }
-
-          router.push(redirectUrl);
-        }
-      }}
       onScreenChange={(fullScreenElement) => {
         setIsFullscreen(!!fullScreenElement);
       }}

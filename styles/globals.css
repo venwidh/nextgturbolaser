@@ -3,6 +3,10 @@
 @tailwind utilities;
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+.imageGallery .image-gallery-slides {
+  border-radius: 0.5rem;
+}
+
 .imageGallery .image-gallery-thumbnail.active,
 .imageGallery .image-gallery-thumbnail:hover,
 .imageGallery .image-gallery-thumbnail:focus {
@@ -21,6 +25,7 @@
 
 .imageGallery .original {
   width: 100%;
+  cursor: auto;
 }
 .imageGallery .original:focus,
 .imageGallery .original:active {

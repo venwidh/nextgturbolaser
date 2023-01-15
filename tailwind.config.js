@@ -10,6 +10,8 @@ module.exports = {
   theme: {
     colors: {
       ...colors,
+      primary: "#C53236",
+      secondary: "#222",
     },
     extend: {
       minHeight: {
@@ -86,6 +88,7 @@ module.exports = {
     "disabled",
   ],
   plugins: [
+    require("tailwindcss-text-fill-stroke"),
     require("@tailwindcss/forms"),
     plugin(function ({ addComponents, theme }) {
       const screens = theme("screens", {});

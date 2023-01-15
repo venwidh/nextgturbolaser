@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { RESOURCES } from "../../lib/resources";
+import { useLanguageStore } from "../../lib/stores/resources-store";
 // components
 
 import IndexDropdown from "../Dropdowns/IndexDropdown";
 
 export default function Navbar() {
+  const { res } = useLanguageStore(({ res }) => ({ res }));
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -39,18 +42,34 @@ export default function Navbar() {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              {["Home", "Products", "About Us", "Contact Us"].map((item) => (
-                <li key={item} className="flex items-center">
+              {[
+                { href: "home", text: res.home },
+                { href: "products", text: res.products },
+                { href: "about-us", text: res.aboutUs },
+                { href: "contact-us", text: res.contactUs },
+              ].map((item) => (
+                <li key={item.href} className="flex items-center">
                   <a
-                    className="hover:text-blueGray-500 text-blueGray-700 px-7 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                    href="https://www.creative-tim.com/learning-lab/tailwind/nextjs/overview/notus?ref=nnjs-index-navbar"
+                    className="hover:text-primary text-blueGray-700 px-7 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    href={`#${item.href}`}
                   >
-                    {item}
+                    {item.text}
                   </a>
                 </li>
               ))}
               <li className="flex items-center pl-5">
-                <IndexDropdown />
+                {Object.keys(RESOURCES).map((lang, i) => (
+                  <>
+                    <Link
+                      key={lang}
+                      href={`?lang=${lang}`}
+                      className="hover:text-blueGray-500 text-blueGray-700 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    >
+                      {lang.toUpperCase()}
+                    </Link>
+                    {i < lang.length - 1 && <div className="mx-2">|</div>}
+                  </>
+                ))}
               </li>
             </ul>
           </div>
