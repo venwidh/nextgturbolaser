@@ -93,7 +93,7 @@ export default function Landing({
                 y="0"
               >
                 <polygon
-                  className="text-blueGray-200 fill-current"
+                  className="text-slate-200 fill-current"
                   points="2560 0 2560 100 0 100"
                 ></polygon>
               </svg>
@@ -101,7 +101,7 @@ export default function Landing({
           </div>
         </section>
 
-        <section id="products" className="pb-20 -mt-28 bg-blueGray-200">
+        <section id="products" className="pb-20 -mt-28 bg-slate-200">
           <div className="container mx-auto px-4">
             <div className="hidden lg:block">
               <TopProduct />
@@ -112,12 +112,12 @@ export default function Landing({
                 <h3 className="text-3xl mb-8 font-semibold leading-normal">
                   {res.ourProducts}
                 </h3>
-                <p className="text-lg font-semibold leading-relaxed mt-0 mb-4 text-blueGray-600">
+                <p className="text-lg font-semibold leading-relaxed mt-0 mb-4 text-slate-600">
                   PT. TURBOMAS LANGGENG LESTARI
                   <br />
                   <span className="font-normal">{res.distAndTrading}</span>
                 </p>
-                <p className="text-lg leading-relaxed mt-0 mb-4 text-blueGray-600">
+                <p className="text-lg leading-relaxed mt-0 mb-4 text-slate-600">
                   {res.presentsNewTech}
                 </p>
               </div>
@@ -151,6 +151,73 @@ export default function Landing({
                   contentImg="/img/product-tlm-2513-spec.jpg"
                 />
               </div>
+
+              <div className="lg:pt-6 w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="CNC Router Machine"
+                  img="/img/product-cnc-router-machine.jpg"
+                  contentImg="/img/product-cnc-router-machine-spec.jpg"
+                />
+              </div>
+
+              <div className="w-full pt-16 md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Fiber Cutting Machine"
+                  img="/img/product-fiber-cutting-machine.jpg"
+                  contentImg="/img/product-fiber-cutting-machine-spec.jpg"
+                />
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Cutting Machine"
+                  img="/img/product-laser-cutting-machine.jpg"
+                  contentImg="/img/product-laser-cutting-machine-spec.jpg"
+                />
+              </div>
+
+              <div className="lg:pt-6 w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Welding Machine"
+                  img="/img/product-laser-welding-machine.jpg"
+                />
+              </div>
+
+              <div className="w-full pt-16 md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Fiber Making Machine"
+                  img="/img/product-fiber-making-machine.jpg"
+                  contentImg="/img/product-fiber-making-machine-spec.jpg"
+                />
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Machine Sparepart 1"
+                  img="/img/product-laser-machine-sparepart-1.jpg"
+                />
+              </div>
+
+              <div className="lg:pt-6 w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Machine Sparepart 2"
+                  img="/img/product-laser-machine-sparepart-2.jpg"
+                />
+              </div>
+
+              <div className="w-full pt-16 md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Machine Sparepart 3"
+                  img="/img/product-laser-machine-sparepart-3.jpg"
+                />
+              </div>
+
+              <div className="w-full md:w-4/12 px-4 text-center">
+                <ProductTile
+                  name="Laser Machine Sparepart 4"
+                  img="/img/product-laser-machine-sparepart-4.jpg"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -180,7 +247,7 @@ export default function Landing({
               <h3 className="text-3xl mb-8 font-semibold leading-normal">
                 {res.aboutUs}
               </h3>
-              <p className="text-lg leading-relaxed mt-0 mb-4 text-blueGray-600">
+              <p className="text-lg leading-relaxed mt-0 mb-4 text-slate-600">
                 PT. TURBOMAS LANGGENG LESTARI (Next-G Turbo Laser)
                 <br />
                 {res.isAGrowingCompany}
@@ -190,14 +257,34 @@ export default function Landing({
             </div>
           </div>
 
-          <div className="md:w-9/12 m-auto">
+          <div className="md:w-9/12 m-auto mb-20">
             <iframe
               src="https://www.youtube.com/embed/fVYP8B6HiM0"
               title="FUNGSI MESIN LASER !!! #mesinlaser #mesinlasercutting #turbolaser"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="w-full h-350-px lg:h-600-px "
+              className="w-full h-350-px lg:h-600-px"
             ></iframe>
+          </div>
+
+          <div className="md:w-9/12 m-auto mb-20">
+            <iframe
+              src="https://www.youtube.com/embed/SqXOWqK_7Eg"
+              title="INSTALASI MESIN LASER"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-350-px lg:h-600-px"
+            ></iframe>
+          </div>
+
+          <div className="md:w-9/12 m-auto text-center text-3xl">
+            <a href="https://www.youtube.com/@turbolaserofficial1299">
+              <i
+                className="fa-brands fa-youtube fa-flip"
+                style={{ color: "red" }}
+              />{" "}
+              {res.moreVideos}
+            </a>
           </div>
         </section>
 

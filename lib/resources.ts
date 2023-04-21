@@ -12,6 +12,7 @@ export const RESOURCES = {
       "is a growing company specialize in Laser Cutting And Engrave Machine.",
     weHaveBeenEstablished: "We have been established since 2010.",
     ourLocation: "Our Location",
+    moreVideos: "More Videos"
   },
   id: {
     home: "Beranda",
@@ -26,5 +27,6 @@ export const RESOURCES = {
       "adalah perusahaan berkembang yang berspesialisasi di Pemotongan dengan Laser dan Mesin Ukir.",
     weHaveBeenEstablished: "Kami telah berdiri sejak 2010.",
     ourLocation: "Lokasi Kami",
+    moreVideos: "Video Lainnya"
   },
 };

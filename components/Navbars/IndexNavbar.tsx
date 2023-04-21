@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
               href="/"
-              className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+              className="text-slate-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
               <Image
                 src="/img/TurboLaserLogo-600px.png"
@@ -48,7 +48,7 @@ export default function Navbar() {
               ].map((item) => (
                 <li key={item.href} className="flex items-center">
                   <a
-                    className="hover:text-primary text-blueGray-700 px-7 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                    className="hover:text-primary text-slate-700 px-7 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                     href={`#${item.href}`}
                   >
                     {item.text}
@@ -61,7 +61,7 @@ export default function Navbar() {
                     <Link
                       key={lang}
                       href={`?lang=${lang}`}
-                      className="hover:text-blueGray-500 text-blueGray-700 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                      className="hover:text-slate-500 text-slate-700 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                     >
                       {lang.toUpperCase()}
                     </Link>
